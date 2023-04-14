@@ -1,0 +1,21 @@
+{
+  "name": "torch-dev",
+  "dockerFile": "Dockerfile",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.pythonPath": "/opt/venv/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "njpwerner.autodocstring",
+        "eamodio.gitlens",
+        "PKief.material-icon-theme",
+        "enkia.tokyo-night"
+    ]
+    }
+  }
+}
