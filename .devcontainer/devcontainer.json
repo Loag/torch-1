@@ -5,12 +5,14 @@
     "vscode": {
       "settings": {
         "python.pythonPath": "/opt/venv/bin/python",
+        "python.analysis.extraPaths": ["/opt/venv/lib/python3.9/site-packages"],
         "python.linting.enabled": true,
         "python.linting.pylintEnabled": true
     },
     "extensions": [
         "ms-python.python",
         "ms-python.vscode-pylance",
+        "ms-python.pylint",
         "njpwerner.autodocstring",
         "eamodio.gitlens",
         "PKief.material-icon-theme",

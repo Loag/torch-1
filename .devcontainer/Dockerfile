@@ -12,11 +12,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libxrender-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages
-RUN pip install --no-cache-dir torch torchvision tensorboard torchviz
-
 # Create a virtual environment
 RUN python -m venv /opt/venv
 
 # Activate the virtual environment
 ENV PATH="/opt/venv/bin:$PATH"
+
+# Install Python packages within the virtual environment
+RUN pip install --no-cache-dir torch torchvision tensorboard torchviz
+
+RUN pip install --no-cache-dir pylint
